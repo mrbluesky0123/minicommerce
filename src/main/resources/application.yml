@@ -1,0 +1,7 @@
+spring:
+  datasource:
+    driverClassName: org.mariadb.jdbc.Driver
+    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:mariadb://198.13.47.188:19762/MINICOMMERCE?characterEncoding=UTF-8&serverTimezone=UTC
+    username: mrbluesky
+    password: kang12!@
