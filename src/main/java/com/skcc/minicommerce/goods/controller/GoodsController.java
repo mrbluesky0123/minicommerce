@@ -1,11 +1,10 @@
-package com.skcc.minicommerce.Things.controller;
+package com.skcc.minicommerce.goods.controller;
 
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class ThingsController {
+public class GoodsController {
 
   @GetMapping("/things/thingsinfo")
   public String getThingsInfo(){
