@@ -1,15 +1,16 @@
 package com.skcc.minicommerce.goods.vo;
 
 import java.time.LocalDateTime;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+
+import lombok.*;
+import org.apache.ibatis.type.Alias;
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
+@ToString
+@Alias("goods")
 public class GoodsVo {
   private Long goodsId;
   private String goodsBrnd;
