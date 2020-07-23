@@ -18,8 +18,8 @@
 			reg_dt as regDt,
 			regr_id as regrId,
 			upd_dt as updDt,
-			updr_id as updrId,
+			updr_id as updrId
 		  FROM goods_master
-         WHERE goods_id = 1
+         WHERE goods_id = #{goodsId}
     </select>
 </mapper>

@@ -7,10 +7,13 @@ spring:
     password: kang12!@
     driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
 
+server:
+  port: 8088
+
 mybatis:
   mapper-locations:
     - mybatis/*.xml
 
 logging:
   level:
-    goods: TRACE
+    goods: ERROR
