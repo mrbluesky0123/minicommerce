@@ -5,6 +5,7 @@ import com.skcc.minicommerce.goods.dto.GoodsDto;
 import com.skcc.minicommerce.goods.vo.GoodsVo;
 import com.skcc.minicommerce.review.service.ReviewService;
 import com.skcc.minicommerce.review.vo.ReviewVo;
+import com.skcc.minicommerce.util.RequestScopeUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -34,9 +35,11 @@ public class GoodsService {
     log.error("#####" + goodsInfo);
 
     // Reviews
-    List<ReviewVo> reviewVoList = this.reviewService.getReview(goodsId);
+//    List<ReviewVo> reviewVoList = this.reviewService.getReview(goodsId);
 
-    return GoodsDto.builder().goodsVo(goodsInfo).reviewVoList(reviewVoList).build();
+    log.error(RequestScopeUtil.getCurrentRequest().getHeader("UUID" ));
+
+    return GoodsDto.builder().goodsVo(goodsInfo).reviewVoList(null).build();
 
   }
 
